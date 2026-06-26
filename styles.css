@@ -1,0 +1,158 @@
+:root {
+  --text: #222222;
+  --muted: #666666;
+  --line: #d8d8d8;
+  --link: #075a9c;
+  --bg: #ffffff;
+  --soft: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px 24px 44px;
+}
+
+.masthead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.masthead p {
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.intro {
+  max-width: 760px;
+  padding: 26px 0 18px;
+}
+
+.links {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+section {
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+section:first-of-type {
+  border-top: 0;
+}
+
+h2 {
+  margin-bottom: 9px;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  padding-left: 23px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.publications {
+  padding-left: 24px;
+}
+
+.publications li {
+  margin-bottom: 13px;
+}
+
+.publications p {
+  margin-bottom: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .masthead {
+    display: block;
+  }
+
+  nav {
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
